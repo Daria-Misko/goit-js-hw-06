@@ -21,15 +21,7 @@ function onFormSubmit(event) {
 		const message = "All fields must be filled!"
 		return alert(message);
 	} else {
-		console.log(`"email": ${mail.value}, "password": ${pass.value}`)
+		console.log({ "email": mail.value, "password": pass.value })
 	}
 	event.currentTarget.reset();
-
-	// const formData = new FormData(event.currentTarget);
-	// console.log(formData);
-	// formData.forEach((value, name) => {
-	// 	console.log('onFormSubmet -> name', name);
-	// 	console.log('onFormSubmet -> value', value);
-	// }
-	// )
 }
